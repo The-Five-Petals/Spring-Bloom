@@ -522,7 +522,6 @@ header a span{
 /* slider and images  */
 body{
     background-color: rgba(250, 246, 248, 0.733);
-    
 }
 .slider{
     width: 1000px;
@@ -588,10 +587,18 @@ main image{
     width: 500px;
     height: 500px;
     padding: 20px;
+    position: relative;
+    left: 100px;
 }
 h3{
     padding: 20px;
     height: 10px;
+    position: relative;
+    left: 100px;
+}
+.add-cart1{
+    position: relative;
+    left: 100px;
 }
 #secImge{
     width: 500px;
@@ -599,18 +606,18 @@ h3{
     padding: 20px;
     position: relative;
     bottom: 650px;
-    left: 600px;
+    left: 700px;
 }
 #p3{
     height: 10px;
     position: relative;
     bottom: 650px;
-    left: 600px;
+    left: 700px;
 }
 .add-cart2 {
     position: relative;
     bottom: 650px;
-    left: 600px;
+    left: 720px;
 }
 #thirdImge{
     width: 500px;
@@ -618,17 +625,17 @@ h3{
     padding: 20px;
     position: relative;
     bottom: 1300px;
-    left: 1200px;
+    left: 1350px;
 }
 #p4{
     position: relative;
     bottom: 1300px;
-    left: 1200px;
+    left: 1350px;
 }
 .add-cart3{
     position: relative;
     bottom: 1300px;
-    left: 1200px;  
+    left: 1370px;  
 }
 #fourthImge{
     width: 500px;
@@ -636,14 +643,17 @@ h3{
     padding: 20px;
     position: relative; 
     bottom: 1200px;
+    left: 100px;
 }
 #p5{
     position: relative; 
-    bottom: 1200px;  
+    bottom: 1200px; 
+    left: 100px; 
 }
 .add-cart4{
     position: relative; 
     bottom: 1200px;
+    left: 100px;
 }
 #fivthImge{
     width: 500px;
@@ -651,17 +661,17 @@ h3{
     padding: 20px;
     position: relative; 
     bottom: 1860px;
-    left: 600px ;
+    left: 700px ;
 }
 #p6{
     position: relative; 
     bottom: 1860px;
-    left: 600px ;
+    left: 700px ;
 }
 .add-cart5{
     position: relative; 
     bottom: 1860px;
-    left: 600px ;
+    left: 700px ;
 }
 #sexthImge{
     width: 500px;
@@ -669,17 +679,17 @@ h3{
     padding: 20px;
     position: relative; 
     bottom: 2500px;
-    left: 1200px ;
+    left: 1350px ;
 }
 #p7{
     position: relative; 
     bottom: 2500px;
-    left: 1200px ;
+    left: 1400px ;
 }
 .add-cart6{
     position: relative; 
     bottom: 2500px;
-    left: 1200px ;
+    left: 1400px ;
 }
 .navigation-manual{
 position:absolute;
