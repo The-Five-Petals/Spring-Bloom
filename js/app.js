@@ -1,4 +1,5 @@
 
+
 //  start of function  of sliding images in ceremony page added by Hamza
 
 let myIndex = 0;
@@ -83,3 +84,6 @@ function onLoadCartNumbers(){
   }
 }
 onLoadCartNumbers();
+=======
+'use srtice'
+

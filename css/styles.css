@@ -1,4 +1,5 @@
 
+
  /* ---------------------------------------------- start of  CSS in ceremony for sliding images by Hamza   */
 *{
     box-sizing: border-box;
@@ -123,3 +124,616 @@ input[type=text], select, textarea {
   .imgContact:hover{
     transform: translate(50px ,30px);
   }
+=======
+#Coverh1{
+margin-top: 500px;
+margin-left: 50px;
+font-size:50px;
+font-family: Arial, Helvetica, sans-serif;
+}
+#CoverP1{
+font-size:27px;
+margin-left: 90px;
+width: 560px;
+font-family: cursive;
+}
+#CoverIgon{
+    margin-left:1000px;
+    
+}
+#CoverNav{
+    position: relative;
+    bottom: 80px;
+}
+#CoverButton:hover {background-color: #eea5c1;}
+
+#CoverButton{
+display: inline-block;
+border-radius: 10px;
+background-color: #fdfcfb;
+border: none;
+color: #1a1818;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+margin-left: 1000px;
+position: relative;
+bottom:100px ;
+}
+#CoverButton span{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+#CoverButton span::after{
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+#CoverButton:hover span{
+padding-right: 25px;
+}
+#CoverButton:hover span:after{
+opacity: 1;
+right: 0;
+}
+
+*{
+    box-sizing: border-box;
+   
+}
+/* 
+body{
+    background-color: rgb(235, 180, 235);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+/* header and footer */
+
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 70px; 
+      background-color: rgba(189, 185, 185, 0.12);
+    justify-content: center;
+    align-items: center;
+  }
+header a i{
+ color:  rgb(83, 80, 80) ;
+ display: inline-block;
+   
+   position: relative;
+  left: 740px;
+  font-weight: bold;
+  
+}
+
+header a span{
+  color:  rgb(83, 80, 80) ;
+ 
+    
+    position: relative;
+   left: 690px;
+  font-weight: bold;
+   
+ }
+  .mySlides {
+      display:none;
+    }
+ #nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+  } 
+ 
+  /* #nav-container * {
+    visibility: visible;
+  } */
+  .button {
+     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+    width: 30px;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-left: 25px;
+    
+
+  }
+  .icon-bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: rgb(83, 80, 80);
+    transition: .3s;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 5px;
+  } 
+  
+  #nav-container:focus-within .button {
+    pointer-events: none;
+  } 
+  #nav-container:focus-within .icon-bar:nth-of-type(1) {
+    transform: translate3d(0,8px,0) rotate(45deg);
+  } 
+  #nav-container:focus-within .icon-bar:nth-of-type(2) {
+    opacity: 0;
+  }
+  #nav-container:focus-within .icon-bar:nth-of-type(3) {
+    transform: translate3d(0,-8px,0) rotate(-45deg);
+  }
+  
+  #nav-content {
+    margin-top: 70px;
+    padding: 20px;
+    width: 90%;
+    max-width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 70px);
+    background: #ececec;
+    pointer-events: auto;
+    transform: translateX(-100%);
+    transition: transform .3s;
+    will-change: transform;
+    
+  }
+  
+  #nav-content ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #nav-content li a {
+    padding: 10px 5px;
+    display: block;
+    text-transform: uppercase;
+    transition: color .1s;
+  }
+  
+  #nav-content li a:hover {
+    color: #BF7497;
+  }
+  a:link {
+    text-decoration: none;
+    outline: 0;
+  }
+  
+  a {
+    color: currentColor;
+    transition: .2s ease-in-out;
+  }
+ 
+/* This is for li in the bottom */
+   #nav-content li:not(.small) + .small {
+    margin-top: 200px;
+  }
+   
+  .small {
+    display: flex;
+    align-self: center;
+  }
+  
+  .small a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+    margin-left: 15px;
+  } 
+ 
+  #nav-container:focus-within #nav-content {
+    transform: none;
+  }
+
+  
+
+ 
+   footer{
+    position: absolute;
+    top: 2300px;
+  }
+  
+  .footer-distributed{
+    background-color: rgba(189, 185, 185, 0.12);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 80px;
+  }
+   
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+   
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+   
+  .footer-distributed h3{
+    color:  black;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+  }
+   
+  .footer-distributed h3 span{
+    color:  #5383d3;
+  }
+   
+   
+  .footer-distributed .footer-links{
+    color: black;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+   
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+  }
+   
+  .footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+   
+   
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+   
+  .footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color:black;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+   
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+   
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color:black;
+    vertical-align: middle;
+    margin:0;
+  }
+   
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+   
+  .footer-distributed .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+  }
+   
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+   
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+   
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+   
+   .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+    
+   .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #000000;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }  
+  
+   
+   @media (max-width: 880px) {
+   
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    
+    }
+   
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    
+    }
+   
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+   
+   
+   } 
+
+
+
+
+/* slider and images  */
+body{
+    background-color: rgba(250, 246, 248, 0.733);
+    
+}
+.slider{
+    width: 1000px;
+    overflow: hidden;
+    height: 800px;
+    width: 70%;
+    border-radius: 90px;
+    overflow: hidden;
+    margin: 0px auto;
+    padding:40px;
+}
+
+#img1{
+    width: 90%;
+    height: 800px;
+    padding: 40px;
+
+}
+#img2{
+    width: 80%;
+    height: 800px;
+   padding: 40px;
+}
+#img3{
+    width: 80%;
+    height: 800px;
+ padding: 40px;
+}
+#img4{
+    width: 80%;
+    height: 600px;
+   padding: 40px;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+
+}
+
+.slide {
+    width: 20%;
+    transition: 3s;
+}
+
+#imagesection{
+ display: inline-block;
+}
+main image{
+    padding: 100px;
+    width: 600px;
+    margin-top: 30px;
+    margin: 0px auto;
+    display: inline-block;
+    
+}
+#firstImge{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+}
+h3{
+    padding: 20px;
+    height: 10px;
+}
+#secImge{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    position: relative;
+    bottom: 650px;
+    left: 600px;
+}
+#p3{
+    height: 10px;
+    position: relative;
+    bottom: 650px;
+    left: 600px;
+}
+.add-cart2 {
+    position: relative;
+    bottom: 650px;
+    left: 600px;
+}
+#thirdImge{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    position: relative;
+    bottom: 1300px;
+    left: 1200px;
+}
+#p4{
+    position: relative;
+    bottom: 1300px;
+    left: 1200px;
+}
+.add-cart3{
+    position: relative;
+    bottom: 1300px;
+    left: 1200px;  
+}
+#fourthImge{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    position: relative; 
+    bottom: 1200px;
+}
+#p5{
+    position: relative; 
+    bottom: 1200px;  
+}
+.add-cart4{
+    position: relative; 
+    bottom: 1200px;
+}
+#fivthImge{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    position: relative; 
+    bottom: 1860px;
+    left: 600px ;
+}
+#p6{
+    position: relative; 
+    bottom: 1860px;
+    left: 600px ;
+}
+.add-cart5{
+    position: relative; 
+    bottom: 1860px;
+    left: 600px ;
+}
+#sexthImge{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    position: relative; 
+    bottom: 2500px;
+    left: 1200px ;
+}
+#p7{
+    position: relative; 
+    bottom: 2500px;
+    left: 1200px ;
+}
+.add-cart6{
+    position: relative; 
+    bottom: 2500px;
+    left: 1200px ;
+}
+.navigation-manual{
+position:absolute;
+width: 1000px;  /*controle the chick points */
+margin-top: -40px;
+display: flex;
+justify-content: center;
+}
+
+
+.manual-btn{
+    border: 5px solid black;
+    padding: 7px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 1s;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+    margin-left: 100px;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+#radio7:checked ~ .first{
+    margin-left: 0;
+}
+
+
+
+
+
+
+
