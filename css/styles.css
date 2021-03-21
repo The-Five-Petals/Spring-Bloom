@@ -1,0 +1,60 @@
+#Coverh1{
+margin-top: 500px;
+margin-left: 50px;
+font-size:50px;
+font-family: Arial, Helvetica, sans-serif;
+}
+#CoverP1{
+font-size:27px;
+margin-left: 90px;
+width: 560px;
+font-family: cursive;
+}
+#CoverIgon{
+    margin-left:1000px;
+    
+}
+#CoverNav{
+    position: relative;
+    bottom: 80px;
+}
+#CoverButton:hover {background-color: #eea5c1;}
+
+#CoverButton{
+display: inline-block;
+border-radius: 10px;
+background-color: #fdfcfb;
+border: none;
+color: #1a1818;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+margin-left: 1000px;
+position: relative;
+bottom:100px ;
+}
+#CoverButton span{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+#CoverButton span::after{
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+#CoverButton:hover span{
+padding-right: 25px;
+}
+#CoverButton:hover span:after{
+opacity: 1;
+right: 0;
+}
