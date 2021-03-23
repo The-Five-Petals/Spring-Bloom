@@ -756,10 +756,10 @@ justify-content: center;
 }
 
 
-/*--------------------------------- YAZAN PART - THE ABOUT US STYLING ----------------------*/
+/* YAZAN PART - THE ABOUT US STYLING */
  
 /* Three columns side by side */
-.column1 {
+.columnYzn {
   float: left;
   width: 25%;
   margin-bottom: 16px;
@@ -769,47 +769,45 @@ justify-content: center;
  
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-  .column1 {
+  .columnYzn {
     width: 100%;
     display: block;
   }
 }
  
 /* Add some shadows to create a card effect */
-.card {
+.cardYzn {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  
 }
  
  
 /* Some left and right padding inside the container */
-.container1 {
+.containerYzn {
   padding: 23px 16px;
   
 }
  
 /* Clear floats */
-.container1::after, .row::after {
+.containerYzn::after, .rowYzn::after {
   
   content: "";
   clear: both;
   display: table;
 }
  
-.title {
+.titleYzn {
   color: grey;
 }
  
 .fa {
   padding: 10px;
   font-size: 30px;
-  width: 50px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
 }
-
-
  
 /* Add a hover effect if you want */
 .fa:hover {
@@ -851,6 +849,30 @@ justify-content: center;
   font-family: 'Nunito', sans-serif;
 text-align: center;
 }
+ 
+#form-ceremony{
+ float: right;
+}
+ 
+ 
+/* hover btn */
+.image:hover .cart1{
+ 
+  opacity: 1;
+  padding: 10px;
+  
+}
+ 
+.image:hover .cart3{
+ 
+  opacity: 1;
+  padding: 10px;
+}
+ 
+ 
+/*--------------------------------end---------------------*/
+
+
 
 
 /*  -------------------------------- neama'a part ----------------------------------- */
