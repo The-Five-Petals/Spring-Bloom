@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spring Bloom</title>
-    
+
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+            </style>
 </head>
 
 
 <body>
     <header>
-        <h3 class="headerlogo">Spring<span>Bloom</span></h3>
-        <a href="cart.html">
 
-            <i class="icon ion-md-cart" > </i><span>Cart</span>
-                         
-          
-              </a>   
-        
+<a href="./home.html"><img src="https://i.ibb.co/RNTYZpg/logo2.png" class="headerlogo" ></a>
+
+ 
+    
+       
+        <ul>
+            <li class="cart">
+                <a href="./cart.html">
+
+                    <i class="icon ion-md-cart" style="font-size: 2.50em;"> </i><span style="font-size: 1.90em;" >0</span>
+            </li>
+
+            </a>
+
+        </ul>
     </header>
-     
+
 
     <nav>
 
@@ -36,20 +51,20 @@
             <div id="nav-content" tabindex="0">
                 <ul>
                     <li><a href="home.html">Home</a></li>
-               
+
                     <li><a href="aboutUs.html">About Us</a></li>
-            
+
                     <li><a href="ceremony.html">Special Occasions</a></li>
-                    
+
                     <!-- <li><a href="">Cart</a></li> -->
-                  
-                    <li class="small"><a href="">SignUp</a><a href="">LogIn</a></li>
+
+                    <!-- <li class="small"><a href="">SignUp</a><a href="">LogIn</a></li> -->
                 </ul>
             </div>
 
     </nav>
- 
-    
+
+
     <div class="slider">
         <div class="slides">
 
@@ -57,121 +72,129 @@
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4"> 
+            <input type="radio" name="radio-btn" id="radio4">
 
 
             <!-- slide image  -->
             <div class="slide first">
-                <img id ="img1"src="img/12.jpg" alt="">
+                <img id="img1" src="img/12.jpg" alt="">
             </div>
 
             <div class="slide">
                 <img id="img2" src="img/16.jpg" alt="">
             </div>
-        
+
             <div class="slide">
-               <img id="img3" src="img/27.jpg" alt="">
+                <img id="img3" src="img/27.jpg" alt="">
             </div>
 
             <div class="slide">
                 <img id="img4" src="img/newslide.jpg" alt="">
-             </div> 
+            </div>
 
         </div>
 
-        <!-- manual navigation  --> 
-         <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
+
     </div>
-    
+
+<!-- manual navigation  --> 
+<div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
 </div>
-<main>
-    <!-- images beside the slider -->
-    <section class="hover">
-        <div class="image">
-            <img  id ="firstImge" src="img/2.jpg" alt="">
-            <h3 id="p1">Flower Gori package with special messages</h3>
-            <h3 id="p1">10.00jd</h3>
-            <a class="add-cart1 cart1" href="#">Add Cart</a>
-            <!-- <input type="hidden" value="10"> -->
-        </div>
-        
-        <div class="image">
-            <img  id ="secImge" src="img/3.jpg" alt="">
-            <h3 id="p3">Pink Gori Roses </h3>
-            <h3 id="p3">15.00jd</h3>
-            <a class="add-cart2 cart2" href="#">Add Cart</a>
-            <!-- <input type="hidden" value="15"> -->
-        </div>
-        
-        <div class="image">
-            <img  id ="thirdImge" src="img/4.jpg" alt="">
-            <h3 id="p4"> Heart Package </h3>
-            <h3 id="p4">12.00jd</h3>
-            <a class="add-cart3 cart3" href="#">Add Cart</a>
-            <!-- <input type="hidden" value="12"> -->
-        </div>
-        
-        <div class="image">
-            <img  id ="fourthImge" src="img/5.jpg" alt="">
-            <h3 id="p5"> Message Package of Roses </h3>
-            <h3 id="p5">13.00jd</h3>
-            <a class="add-cart4 cart4" href="#">Add Cart</a>
-            <!-- <input type="hidden" value="13"> -->
-        </div>
 
-        <div class="image">
-            <img  id ="fivthImge" src="img/6.jpg" alt="">
-            <h3 id="p6"> Mix Package  </h3>
-            <h3 id="p6">18.00jd</h3>
-            <a class="add-cart5 cart5" href="#">Add Cart</a>
-            <!-- <input type="hidden" value="18"> -->
-        </div>
-        <div id="container-box">
-        <div class="image">
-            <img  id ="sexthImge" src="img/birthday.jpg" alt="">
-            <h3 id="p7"> Birthday Package  </h3>
-            <h3 id="p7">20.00jd</h3>
-            <a class="add-cart6 cart6" href="#">Add Cart</a>
-            <!-- <input type="hidden" value="20"> -->
-        </div>
-    </div>
-        
-    
-    </section>
-</main>
+    <main>
+        <!-- images beside the slider -->
+        <section class="hover">
+            <section class="itemsSection">
+                <div class="image">
+                    <img id="firstImge" src="./img/Flower Gori.jpg" alt="">
+                    <h3 >Flower Gori package with special messages</h3>
+                    <h3 id="p1">10.00jd</h3>
+                    <a href="#0" class="add-cart">Add Cart</a>
+                    <!-- <input type="hidden" value="10"> -->
+                </div>
+
+                <div class="image">
+                    <img id="secImge" src="img/Pink Gori.jpg" alt="">
+                    <h3 id="p3">Pink Gori Roses </h3>
+                    <h3 id="p3">15.00jd</h3>
+                    <a href="#0" class="add-cart">Add Cart</a>
+                    <!-- <input type="hidden" value="15"> -->
+                </div>
+
+                <div class="image">
+                    <img id="thirdImge" src="img/Heart Package.jpg" alt="">
+                    <h3 id="p4"> Heart Package </h3>
+                    <h3 id="p4">12.00jd</h3>
+                    <a href="#0" class="add-cart">Add Cart</a>
+                    <!-- <input type="hidden" value="12"> -->
+                </div>
+            </section>
+            <section class="itemsSection">
+                <div class="image">
+                    <img id="fourthImge" src="img/Message Package.jpg" alt="">
+                    <h3 id="p5"> Message Package of Roses </h3>
+                    <h3 id="p5">13.00jd</h3>
+                    <a href="#0" class="add-cart">Add Cart</a>
+                    <!-- <input type="hidden" value="13"> -->
+                </div>
+
+                <div class="image">
+                    <img id="fivthImge" src="img/Mix Package.jpg" alt="">
+                    <h3 id="p6"> Mix Package </h3>
+                    <h3 id="p6">18.00jd</h3>
+                    <a href="#0" class="add-cart">Add Cart</a>
+                    <!-- <input type="hidden" value="18"> -->
+                </div>
+
+                <div class="image">
+                    <img id="sexthImge" src="img/Birthday Package.jpg" alt="">
+                    <h3 id="p7"> Birthday Package </h3>
+                    <h3 id="p7">20.00jd</h3>
+                    <a href="#0" class="add-cart">Add Cart</a>
+                    <!-- <input type="hidden" value="20"> -->
+
+                </div>
+            </section>
+
+
+        </section>
+    </main>
 
     <footer class="footer-distributed">
         <hr>
         <div class="footer-left">
 
-            <h3>Spring<span>Bloom</span></h3>
+        
 
             <p class="footer-links">
-            <br>
-                ·            
+             
+                ·
                 <a href="home.html">Home</a>
                 ·
                 <a href="aboutUs.html">About Us</a>
                 ·
                 <a href="ceremony.html">Special Occasions</a>
-                ·
+
+                
                 <!-- <a href="#">Cart</a> -->
 
 
             </p>
+                <img src="https://i.ibb.co/RNTYZpg/logo2.png" class="footerLogo" >
 
             <p class="footer-company-name">SpringBloom &copy; 2021</p>
+         
         </div>
 
         <div class="footer-center">
 
             <div>
                 <!-- <i class="fa fa-map-marker"></i> -->
-                <p><span>Street</span> Amman, Jordan</p>
+                <p> Amman, Jordan</p>
             </div>
 
             <div>
@@ -185,20 +208,28 @@
             </div>
 
 
-            
+
         </div>
 
         <div class="footer-right">
 
             <p class="footer-company-about">
                 <span>About the company</span>
-            ........
+            <p>
+                  Our lovely Web application  provides buy and send gifts online , we can  also  offer organizing ceremonies.
+            </p>  
+            <img src="img/fb-icon.png"/>
+            <img  src="img/insta-icon.png"/>
+            <img  src="img/twit-icon.png"/>
+            <img  src="img/gp-icon.png"/>
+            <img  src="img/mail-icon.png"/>
             </p>
-        
-        
+
+
         </div>
 
-     </footer> 
+    </footer>
     <script src="./js/app.js"></script>
 </body>
+
 </html>

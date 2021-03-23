@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spring Bloom</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cart.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+  </style>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    </style>
 <body>
     <header>
-        <h3 class="headerlogo">Spring<span>Bloom</span></h3>
-        <a href="cart.html">
-            <i class="icon ion-md-cart" > </i><span>Cart</span>
-              </a>   
+      <a href="./home.html"><img src="https://i.ibb.co/RNTYZpg/logo2.png" class="headerlogo" ></a>
+        
+        
+        
+        
+        
+        <ul>
+            <li class="cart">
+        <a href="./cart.html" >   
+
+           
+          <i class="icon ion-md-cart" style="font-size: 2.50em;"> </i><span class="spanCart" style="font-size: 1.90em;">0</span>
+        </li>         
+      
+          </a> 
+         
+        </ul>
         
     </header>
-     
+
 
     <nav>
+
 
         <div id="nav-container">
 
@@ -39,65 +60,116 @@
                     
                     <!-- <li><a href="">Cart</a></li> -->
                   
-                    <li class="small"><a href="">SignUp</a><a href="">LogIn</a></li>
+                    <!-- <li class="small"><a href="">SignUp</a><a href="">LogIn</a></li> -->
                 </ul>
             </div>
 
     </nav>
- 
-    <footer class="footer-distributed">
-        <hr>
-        <div class="footer-left">
+  
 
-            <h3>Spring<span>Bloom</span></h3>
-
-            <p class="footer-links">
-                <br>
-                ·
-                <a href="home.html">Home</a>
-                ·
-                <a href="aboutUs.html">About Us</a>
-                ·
-                <a href="ceremony.html">Special Occasions</a>
-                ·
-                <!-- <a href="#">Cart</a> -->
-
-
-            </p>
-
-            <p class="footer-company-name">SpringBloom &copy; 2021</p>
+<div class="container-products">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price sm-hide">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
         </div>
-
-        <div class="footer-center">
-
-            <div>
-                <!-- <i class="fa fa-map-marker"></i> -->
-                <p><span>Street</span> Amman, Jordan</p>
-            </div>
-
-            <div>
-                <!-- <i class="fa fa-phone"></i> -->
-                <p>0790000000</p>
-            </div>
-
-            <div>
-                <!-- <i class="fa fa-envelope"></i> -->
-                <p><a href="mailto:support@company.com">contact@SpringBloom.com</a></p>
-            </div>
+        <div class="products">
 
         </div>
+    </div>
+       
+   
+<div class= "checkOutText">
+    <h3>Let's Deliver To You .. Please Fill Your Data 🚚  </h3>
+    </div>
 
-        <div class="footer-right">
 
-            <p class="footer-company-about">
-                <span>About the company</span>
-            ........
-            </p>
-        
-        
+
+<section class="checkoutSection">
+
+  
+
+    <div class="rowBilling">
+      <div class="col-75">
+        <div class="checkOutcontainer">
+
+
+
+
+          <form id="CheckoutForm">
+    
+            <div class="rowBilling">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="textboarder" id="fname" name="fullName" placeholder="Your Name">
+                <label for="email"><i class="fa fa-phone"></i> Phone Number</label>
+                <input type="textboarder" id="email" name="phoneNumber" placeholder="07xxxxxxxx">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="textboarder" id="adr" name="address" placeholder="542 W. 15th Street">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="textboarder" id="city" name="city" placeholder="Your City">
+    
+                <div class="rowBilling">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="textboarder" id="state" name="state" placeholder="Region">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="textboarder" id="zip" name="zip" placeholder="10001">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="cartIcon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="textboarder" id="cname" name="cardname" placeholder="Card Name">
+                <label for="ccnum">Credit card number</label>
+                <input type="textboarder" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Exp Month</label>
+                <input type="textboarder" id="expmonth" name="expmonth" placeholder="Month">
+    
+                <div class="rowBilling">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="textboarder" id="expyear" name="expyear" placeholder="Year">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="textboarder" id="cvv" name="cvv" placeholder="352">
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Confirm Your order" class="btn">
+          </form>
         </div>
+      </div>
+      <div id="overlay">
+        <div id="text"></div>
+     <button id="exitButton"></button>
+    </div>
 
-     </footer> 
-    <script src="./js/app.js"></script>
+    </section>
+    
+
+
+<script src='./js/app.js' ></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 </body>
 </html>
