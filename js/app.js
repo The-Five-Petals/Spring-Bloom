@@ -289,3 +289,5 @@ function occasions() {
   setTimeout(occasions, 2000);
 }
 //end of function  of sliding images in ceremony page added by Hamza
+
+

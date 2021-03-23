@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
@@ -41,24 +42,24 @@
     <div class="rowBilling">
         <div class="col-75">
           <div class="checkOutcontainer">
-            <form action="/action_page.php">
+            <form id="CheckoutForm">
       
               <div class="rowBilling">
                 <div class="col-50">
                   <h3>Billing Address</h3>
                   <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                  <input type="textboarder" id="fname" name="firstname" placeholder="John M. Doe">
-                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                  <input type="textboarder" id="email" name="email" placeholder="john@example.com">
+                  <input type="textboarder" id="fname" name="fullName" placeholder="Ahmad Nemer">
+                  <label for="email"><i class="fa fa-envelope"></i> Phone Number</label>
+                  <input type="textboarder" id="email" name="phoneNumber" placeholder="079xxxxxxx">
                   <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
                   <input type="textboarder" id="adr" name="address" placeholder="542 W. 15th Street">
                   <label for="city"><i class="fa fa-institution"></i> City</label>
-                  <input type="textboarder" id="city" name="city" placeholder="New York">
+                  <input type="textboarder" id="city" name="city" placeholder="Amman">
       
                   <div class="rowBilling">
                     <div class="col-50">
                       <label for="state">State</label>
-                      <input type="textboarder" id="state" name="state" placeholder="NY">
+                      <input type="textboarder" id="state" name="state" placeholder="Jubayhah">
                     </div>
                     <div class="col-50">
                       <label for="zip">Zip</label>
@@ -103,10 +104,65 @@
             </form>
           </div>
         </div>
+        <div id="overlay">
+          <div id="text"></div>
+       <button id="exitButton"></button>
+      </div>
+       
 
 
-<script src='./js/app.js' ></script>
+      
+<script>
+function  userMessege(){
+  let text = document.getElementById('text');
+  let overlay = document.getElementById('overlay').style.display = "block";
+  
+  text.setAttribute('style', 'white-space: pre;');
+  text.textContent = 'Hello ' + fullName + ' ' + "!\r\n We are happy that you are Shop with our site! \r\n Your order Wil be delivered you as soon as possible!" ;
+  
+
+
+  let exitButton = document.getElementById('exitButton');
+  exitButton.textContent = "Exit";
+  exitButton.addEventListener('click', popoutMsg);
+
+  function popoutMsg(event) {
+    overlay = document.getElementById('overlay').style.display = "none";
+  }
+}
+let checkoutForm =document.getElementById ('CheckoutForm');
+checkoutForm.addEventListener('submit' ,popoutMsg );
+
+let fullName;
+  let phoneNumber;
+  let address;
+  let city;
+ 
+  
+  function popoutMsg (event){
+  event.preventDefault();
+  fullName= event.target.fullName.value;
+  phoneNumber=event.target.phoneNumber.value;
+  address=event.target.address.value ;
+  city=event.target.city.value;
+  
+  
+ let UserData={
+  fullName:fullName,
+   phoneNo:phoneNumber,
+   address:address,
+   city:city ,
+ };
+ localStorage.setItem("UserCheckout", JSON.stringify(UserData));
+
+ userMessege();
+}
+  </script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </body>
 </html>
+
+
+
+
