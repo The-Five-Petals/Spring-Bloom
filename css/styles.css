@@ -1,23 +1,29 @@
 
 
+
  /* ---------------------------------------------- start of  CSS in ceremony for sliding images by Hamza   */
-*{
-    box-sizing: border-box;
+
+ *{
+  box-sizing: border-box;
+ 
 }
 
 .slide-container{
-margin-left:300px ;
+margin-left:700px ;
 position:relative;
-
+top: 80px;
   
 
 
 }
 .slider-images {
-  
-    height: 500px;
+  width: 80%;
+    height: 600px;
     border: 1px solid black;
     border-radius: 20px;
+    position: relative;
+    right: 200px;
+    top: 50px;
 }
 
 
@@ -26,6 +32,7 @@ Fade out option  */
 
 
   .slide-container {
+    top: 30px;
     animation: slide-container ease-out 3s;
     -webkit-animation: slide-container ease-out 3s;
     -moz-animation: slide-container ease-out 3s;
@@ -65,10 +72,13 @@ Fade out option  */
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    color: rgb(85, 15, 15);
+    position: relative;
+    right: 500px;
   }
   
   input[type=submit] {
@@ -77,6 +87,9 @@ input[type=text], select, textarea {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    position: relative;
+    right: 500px;
+
   }
   
   input[type=submit]:hover {
@@ -86,8 +99,13 @@ input[type=text], select, textarea {
   /* Style the container/contact section */
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #d1cccc9f;
     padding: 10px;
+    margin-top: 200px;
+    color: rgb(17, 16, 16);
+    position: relative;
+    font-size: large;
+  
   }
   
   /* Create two columns that float next to eachother */
@@ -96,6 +114,11 @@ input[type=text], select, textarea {
     width: 50%;
     margin-top: 6px;
     padding: 20px;
+    position: relative;
+    left: 500px;
+    right: 500px;
+    color:rgb(12, 11, 11);
+  
   }
   
   /* Clear floats after the columns */
@@ -114,108 +137,120 @@ input[type=text], select, textarea {
   }
 
   .imgContact{
-      width:580px;
-      height: 300px;
+      width:600px;
+      height: 400px;
       border: 1.5px solid rgb(55, 55, 58);
       border-radius: 20px;
       transition: transform 0.3s ease;
-      transform: translateX(0px);
+      /* transform: translateX(0px); */
+      position: relative;
+      right: 400px;
+
   }
-  .imgContact:hover{
+  /* .imgContact:hover{
     transform: translate(50px ,30px);
-  }
-=======
+  } */
+
+/*------------------------------------------- style cover page (part hanan) ------------------------------*/
 #Coverh1{
-margin-top: 500px;
-margin-left: 50px;
-font-size:50px;
-font-family: Arial, Helvetica, sans-serif;
-}
-#CoverP1{
-font-size:27px;
-margin-left: 90px;
-width: 560px;
-font-family: cursive;
-}
-#CoverIgon{
-    margin-left:1000px;
-    
-}
-#CoverNav{
-    position: relative;
-    bottom: 80px;
-}
-#CoverButton:hover {background-color: #eea5c1;}
+  margin-top: 500px;
+  margin-left: 50px;
+  font-size:55px;
+  text-shadow: 0 0 3px #f87b7b, 0 0 5px #fa515f, 0 0 5px #a8a8df;
+  font-family: 'Zilla Slab', serif;
+  }
+  #CoverP1{
+  font-size:30px;
+  margin-left: 90px;
+  width: 560px;
+  font-family: 'Berkshire Swash', cursive;
+  position: relative;
+  top:30px ;
+  text-shadow: 0 0 3px #f7afaf, 0 0 5px #a8a8df;
+  }
+  #CoverIgon{
+      margin-left:1035px;
+      
+  }
+  #CoverNav{
+      position: relative;
+      bottom: 80px;
+  }
+  #CoverButton:hover {background-color: #eea5c1;}
+  #CoverButton{
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #fdfcfb;
+  border: none;
+  color: #1a1818;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 1000px;
+  position: relative;
+  bottom:100px ;
+  text-shadow: 2px 2px 5px red;
+  font-family: 'Zilla Slab', serif;
+  }
+  #CoverButton span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  #CoverButton span::after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  #CoverButton:hover span{
+  padding-right: 25px;
+  }
+  #CoverButton:hover span:after{
+  opacity: 1;
+  right: 0;
+  }
+  /* end style cover page (part hanan)*/
 
-#CoverButton{
-display: inline-block;
-border-radius: 10px;
-background-color: #fdfcfb;
-border: none;
-color: #1a1818;
-text-align: center;
-font-size: 28px;
-padding: 20px;
-width: 200px;
-transition: all 0.5s;
-cursor: pointer;
-margin: 5px;
-margin-left: 1000px;
-position: relative;
-bottom:100px ;
-}
-#CoverButton span{
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
-}
-#CoverButton span::after{
-content: '\00bb';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -20px;
-transition: 0.5s;
-}
-#CoverButton:hover span{
-padding-right: 25px;
-}
-#CoverButton:hover span:after{
-opacity: 1;
-right: 0;
-}
 
-*{
-    box-sizing: border-box;
-   
+
+/*---------------------------------- Nema'a part - header and footer ------------------------------*/
+
+
+
+.headerlogo{
+  color:  black;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+  position: relative;
+  right: 700px;
+  bottom: 30px;
 }
-/* 
-body{
-    background-color: rgb(235, 180, 235);
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-} */
-
-/* header and footer */
-
+.headerlogo span{
+  color:  #5383d3;
+}
 
 header {
+  z-index: 9;
+  top: 0;
     display: flex;
     position: fixed;
     width: 100%;
     height: 70px; 
-      background-color: rgba(189, 185, 185, 0.12);
+      background-color: rgba(5, 5, 5, 0.12);
     justify-content: center;
     align-items: center;
+    overflow:hidden;
   }
 header a i{
- color:  rgb(83, 80, 80) ;
+ color:  rgb(36, 34, 34) ;
  display: inline-block;
    
    position: relative;
@@ -225,7 +260,7 @@ header a i{
 }
 
 header a span{
-  color:  rgb(83, 80, 80) ;
+  color:  rgb(31, 29, 29) ;
  
     
     position: relative;
@@ -352,208 +387,72 @@ header a span{
   
 
  
-   footer{
-    position: absolute;
-    top: 2300px;
-  }
-  
-  .footer-distributed{
-    background-color: rgba(189, 185, 185, 0.12);
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: bold 16px sans-serif;
-    padding: 55px 50px;
-    margin-top: 80px;
-  }
-   
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: inline-block;
-    vertical-align: top;
-  }
-   
-  .footer-distributed .footer-left{
-    width: 40%;
-  }
-   
-  .footer-distributed h3{
-    color:  black;
-    font: normal 36px 'Cookie', cursive;
-    margin: 0;
-  }
-   
-  .footer-distributed h3 span{
-    color:  #5383d3;
-  }
-   
-   
-  .footer-distributed .footer-links{
-    color: black;
-    margin: 20px 0 12px;
-    padding: 0;
-  }
-   
-  .footer-distributed .footer-links a{
-    display:inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color:  inherit;
-  }
-   
-  .footer-distributed .footer-company-name{
-    color:  #8f9296;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-  }
-   
-   
-  .footer-distributed .footer-center{
-    width: 35%;
-  }
-   
-  .footer-distributed .footer-center i{
-    background-color:  #33383b;
-    color:black;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
-  }
-   
-  .footer-distributed .footer-center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
-  }
-   
-  .footer-distributed .footer-center p{
-    display: inline-block;
-    color:black;
-    vertical-align: middle;
-    margin:0;
-  }
-   
-  .footer-distributed .footer-center p span{
-    display:block;
-    font-weight: normal;
-    font-size:14px;
-    line-height:2;
-  }
-   
-  .footer-distributed .footer-center p a{
-    color:  #5383d3;
-    text-decoration: none;;
-  }
-   
-  .footer-distributed .footer-right{
-    width: 20%;
-  }
-   
-  .footer-distributed .footer-company-about{
-    line-height: 20px;
-    color:  #92999f;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-  }
-   
-  .footer-distributed .footer-company-about span{
-    display: block;
-    color:  black;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-   
-   .footer-distributed .footer-icons{
-    margin-top: 25px;
-  }
-    
-   .footer-distributed .footer-icons a{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color:  #000000;
-    border-radius: 2px;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-  }  
-  
-   
-   @media (max-width: 880px) {
-   
-    .footer-distributed{
-      font: bold 14px sans-serif;
-    
-    }
-   
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right{
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
-    
-    }
-   
-    .footer-distributed .footer-center i{
-      margin-left: 0;
-    }
-   
-   
-   } 
 
 
-
+/* ------------------------------ Bara'a part = THE HOME PAGE STAYL----------------------- */
 
 /* slider and images  */
 body{
     background-color: rgba(250, 246, 248, 0.733);
+    
 }
 .slider{
     width: 1000px;
     overflow: hidden;
-    height: 800px;
-    width: 70%;
-    border-radius: 90px;
+    height: 700px;
+    width: 80%;
+    border-radius: 50px;
     overflow: hidden;
     margin: 0px auto;
     padding:40px;
+    /* background-color: #ecdddd; */
+    position: relative;
+    top: 100px;
+   
 }
 
 #img1{
-    width: 90%;
-    height: 800px;
-    padding: 40px;
-
+    width: 80%;
+    height: 630px;
+    padding: 10px;
+    position: relative;
+    left: 150px;
+    border-radius: 40px ;
+    border: solid #e67c85 10px ;
+    box-shadow: 0 10px 10px 0 rgba(230, 111, 170, 0.993);
 }
 #img2{
     width: 80%;
-    height: 800px;
+    height: 620px;
    padding: 40px;
+   position: relative;
+   top: 7px;
+   left: 150px;
+   border-radius: 40px ;
+   border: solid #e67c85 10px ;
+   box-shadow: 0 10px 10px 0 rgba(230, 111, 170, 0.993);
 }
 #img3{
     width: 80%;
-    height: 800px;
+    height: 620px;
  padding: 40px;
+ position: relative;
+ top: 10px;
+ left: 150px;
+ border-radius: 40px ;
+ border: solid #e67c85 10px ;
+ box-shadow: 0 10px 10px 0 rgba(230, 111, 170, 0.993);
 }
 #img4{
     width: 80%;
-    height: 600px;
+    height: 620px;
    padding: 40px;
+   position: relative;
+  top: 10px;
+   left: 150px;
+   border-radius: 40px ;
+   border: solid #e67c85 10px ;
+   box-shadow: 0 10px 10px 0 rgba(230, 111, 170, 0.993);
 }
 
 .slides{
@@ -572,9 +471,6 @@ body{
     transition: 3s;
 }
 
-#imagesection{
- display: inline-block;
-}
 main image{
     padding: 100px;
     width: 600px;
@@ -582,126 +478,196 @@ main image{
     margin: 0px auto;
     display: inline-block;
     
+    
 }
+
 #firstImge{
-    width: 500px;
-    height: 500px;
+    width: 20%;
+    height: 20%;
     padding: 20px;
     position: relative;
-    left: 100px;
+    left: 210px;
+    top: 130px;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 h3{
     padding: 20px;
     height: 10px;
-    position: relative;
-    left: 100px;
+}
+#p1{
+  position: relative;
+  left: 210px;
+  top:132px;
 }
 .add-cart1{
-    position: relative;
-    left: 100px;
+  position: relative;
+  top:90px;
+  left: 400px;
+  padding: 10px;
+  color: rgb(26, 25, 25);
+  font-weight: bolder;
+  background-color: #d488c1;
+  font-size:x-large;
+  border-radius: 50px;
+  border: solid 2px black;
+  box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #secImge{
-    width: 500px;
-    height: 500px;
+    width: 20%;
+    height: 20%;
     padding: 20px;
     position: relative;
-    bottom: 650px;
-    left: 700px;
+    bottom: 430px;
+    left: 770px;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #p3{
     height: 10px;
     position: relative;
-    bottom: 650px;
-    left: 700px;
+    bottom: 430px;
+    left: 770px;
 }
 .add-cart2 {
     position: relative;
-    bottom: 650px;
-    left: 720px;
+    bottom: 482px;
+    padding: 10px;
+    left: 1000px;
+    color: rgb(14, 13, 13);
+   font-weight: bolder;
+   background-color: #d488c1;
+   font-size:x-large;
+   border-radius: 50px;
+   border: black  2px solid;
+   box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #thirdImge{
-    width: 500px;
-    height: 500px;
+    width: 20%;
+    height: 20%;
     padding: 20px;
     position: relative;
-    bottom: 1300px;
-    left: 1350px;
+    bottom: 1000px;
+    left: 1300px;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #p4{
     position: relative;
-    bottom: 1300px;
-    left: 1350px;
+    bottom: 1000px;
+    left: 1300px;
 }
 .add-cart3{
     position: relative;
-    bottom: 1300px;
-    left: 1370px;  
+    bottom: 1050px;
+    left: 1500px;  
+    padding: 10px;
+    color: rgb(7, 7, 7);
+   font-weight: bolder;
+   background-color: #d488c1;
+   font-size:x-large;
+   border-radius: 50px;
+   border: solid 2px black;
+   box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #fourthImge{
-    width: 500px;
-    height: 500px;
+    width: 20%;
+    height: 20%;
     padding: 20px;
     position: relative; 
-    bottom: 1200px;
-    left: 100px;
+    bottom: 1000px;
+    left: 210px;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #p5{
     position: relative; 
-    bottom: 1200px; 
-    left: 100px; 
+    bottom: 1000px;
+    left: 210px;  
 }
 .add-cart4{
     position: relative; 
-    bottom: 1200px;
-    left: 100px;
+    bottom: 1040px;
+    padding: 10px;
+    left: 400px;
+    color: rgb(12, 12, 12);
+   font-weight: bolder;
+   background-color: #d488c1;
+   font-size:x-large;
+   border-radius: 50px;
+   border: solid 2px black;
+   box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #fivthImge{
-    width: 500px;
-    height: 500px;
+    width: 20%;
+    height: 20%;
     padding: 20px;
     position: relative; 
-    bottom: 1860px;
-    left: 700px ;
+    bottom: 1560px;
+    left: 770px ;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #p6{
     position: relative; 
-    bottom: 1860px;
-    left: 700px ;
+    bottom: 1560px;
+    left: 770px ;
 }
 .add-cart5{
     position: relative; 
-    bottom: 1860px;
-    left: 700px ;
+    bottom: 1611px;
+    padding: 10px;
+    left: 1000px ;
+    color: rgb(19, 18, 18);
+   font-weight: bolder;
+   background-color: #d488c1;
+   font-size:x-large;
+   border-radius: 50px;
+   border: black 2px solid;
+   box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #sexthImge{
-    width: 500px;
-    height: 500px;
+    width: 20%;
+    height: 20%;
     padding: 20px;
     position: relative; 
-    bottom: 2500px;
-    left: 1350px ;
+    bottom: 2130px;
+    left: 1300px ;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
 #p7{
     position: relative; 
-    bottom: 2500px;
-    left: 1400px ;
+    bottom: 2130px;
+    left: 1300px ;
 }
 .add-cart6{
     position: relative; 
-    bottom: 2500px;
-    left: 1400px ;
+    bottom: 2180px;
+    left: 1500px ;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+   font-weight: bolder;
+   background-color: #d488c1;
+   font-size:x-large;
+   border-radius: 50px;
+   border: solid 2px black;
+   box-shadow: 0 10px 10px 0 rgba(228, 105, 181, 0.993);
 }
+
+
 .navigation-manual{
 position:absolute;
-width: 1000px;  /*controle the chick points */
+width: 1300px;  /*controle the chick points */
 margin-top: -40px;
 display: flex;
+bottom: 2px;
 justify-content: center;
 }
 
 
 .manual-btn{
-    border: 5px solid black;
+    border: 5px solid rgb(189, 37, 108);
     padding: 7px;
     border-radius: 40px;
     cursor: pointer;
@@ -731,91 +697,371 @@ justify-content: center;
 #radio4:checked ~ .first{
     margin-left: -60%;
 }
-#radio5:checked ~ .first{
-    margin-left: -80%;
+
+
+
+/* hover btn */
+.image:hover .cart1{
+  
+  opacity: 1;
+  padding: 18px;
+  
 }
-#radio6:checked ~ .first{
-    margin-left: -100%;
+
+.cart2:hover {
+ 
+  opacity: 1;
+  padding: 18px;
 }
-#radio7:checked ~ .first{
-    margin-left: 0;
+
+.cart3:hover {
+  opacity: 1;
+  padding: 18px;
+}
+.cart4:hover {
+  opacity: 1;
+  padding: 18px;
+}
+.cart5:hover {
+  opacity: 1;
+  padding: 18px;
+}
+.cart6:hover {
+  opacity: 1;
+  padding: 18px;
+}
+#firstImge:hover{
+  opacity: 1;
+  padding: 2px;
+}
+#secImge:hover{
+  opacity: 1;
+  padding: 2px;
+}
+#thirdImge:hover{
+  opacity: 1;
+  padding: 2px;
+}
+#fourthImge:hover{
+  opacity: 1;
+  padding: 2px;
+}
+#fivthImge:hover{
+  opacity: 1;
+  padding: 2px;
+}
+#sexthImge:hover{
+  opacity: 1;
+  padding: 2px;
 }
 
 
-
-
-
-
-
-/* YAZAN PART - THE ABOUT US STYLING */
-
+/*--------------------------------- YAZAN PART - THE ABOUT US STYLING ----------------------*/
+ 
 /* Three columns side by side */
-.column {
+.column1 {
   float: left;
   width: 25%;
   margin-bottom: 16px;
   margin-left: 66px;
   padding: 0 8px;
 }
-
+ 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-  .column {
+  .column1 {
     width: 100%;
     display: block;
   }
 }
-
+ 
 /* Add some shadows to create a card effect */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ 
 }
-
+ 
+ 
 /* Some left and right padding inside the container */
-.container {
+.container1 {
   padding: 23px 16px;
+  
 }
-
+ 
 /* Clear floats */
-.container::after, .row::after {
+.container1::after, .row::after {
+  
   content: "";
   clear: both;
   display: table;
 }
-
+ 
 .title {
   color: grey;
 }
-
+ 
 .fa {
   padding: 10px;
   font-size: 30px;
-  width: 20px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
 }
 
+
+ 
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
-
+ 
 /* Set a specific color for each brand */
-
+ 
 /* Facebook */
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
-
+ 
 /* Twitter */
 .fa-github {
   background: #161414;
   color: white;
 }
-
+ 
 .fa-linkedin {
   background: #0072ae;
   color: white;
 }
+ 
+#aboutus-heading{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+#intro-aboutus{
+  font-family: 'Nunito', sans-serif;
+  padding: 80px;
+  
+}
+ 
+#our-team-heading{
+  font-family: 'Nunito', sans-serif;
+text-align: center;
+}
+
+
+/*  -------------------------------- neama'a part ----------------------------------- */
+ 
+footer{
+  /* position: fixed; */
+  bottom: 0;
+  position: relative;
+  top: -2000px;
+}
+
+.footer-distributed{
+  background-color: rgba(189, 185, 185, 0.12);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+  width: 40%;
+}
+ 
+.footer-distributed h3 {
+  color:  black;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+ 
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+  color: black;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color:black;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color:black;
+  vertical-align: middle;
+  margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+  width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ 
+ .footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+  
+ .footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #000000;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}  
+
+ 
+ @media (max-width: 880px) {
+ 
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  
+  }
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  
+  }
+ 
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+ 
+ 
+ } 
+
+
+/* ----------------------- overlay ceremony page ------------------*/
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+ 
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+  text-shadow: 0 0 3px #F7AFAF, 0 0 5px #A8A8DF;
+ 
+ 
+ 
+ 
+ 
+}
+ 
+#exitButton{ 
+  padding: 10px;
+  width: 20px;
+  border: none;
+  background-color: rgb(77, 0, 0)  ;
+  color: white;
+  font-weight: bold;
+ 
+}
+/* ----------------------- end ------------------*/

@@ -6,61 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Occasion</title>
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <style>
    
     </style>
 <body>
 
+  <header>
+        
+      <h3 class="headerlogo">Spring<span>Bloom</span></h3>
+      <a href="cart.html">
+        <i class="icon ion-md-cart" > </i><span>Cart</span>
+                     
+      
+          </a>   
+    
+</header>
+ 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+  </style>
 
+<nav>
 
+    <div id="nav-container">
+
+        <div class="button" tabindex="0">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+           
+                <li><a href="aboutUs.html">About Us</a></li>
+        
+                <li><a href="ceremony.html">Special Occasions</a></li>
+                
+                <!-- <li><a href="">Cart</a></li> -->
+              
+                <li class="small"><a href="">SignUp</a><a href="">LogIn</a></li>
+            </ul>
+        </div>
+
+</nav>
+
+   
+  <body>
+   
+   
+   
     <!-- ---------------------------------------------- start of sliding images by Hamza  -->
     <div class="slide-container">
-
-        <img src="img/flowers.jpg" class="slider-images" >
-        <img src="img/Lanesborough.jpg" class="slider-images" >
-        <img src="img/cake.jpg" class="slider-images" >
-      <img src="img/birthday.jpg" class="slider-images">
+   
+      <img src="img/flowers.jpg" class="slider-images">
+      <img src="img/Lanesborough.jpg" class="slider-images">
+      <img src="img/cake.jpg" class="slider-images">
+      <img src="img/birthday2.jpg" class="slider-images">
       <img src="img/wedding.jpg" class="slider-images">
       <img src="img/entrance.jpg" class="slider-images">
       <img src="img/OuiMadam.jpg" class="slider-images">
-        
+   
     </div>
-  <!-- ---------------------------------------------- end of sliding images by Hamza  -->
-
-
-  <div class="container">
-    <div style="text-align:center">
-      <h2>Consulting us </h2>
-      <p>Swing by for a cup of coffee, or leave us a message:</p>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="./img/contact us.jpg " class='imgContact'>
+    <!-- ---------------------------------------------- end of sliding images by Hamza  -->
+   
+   
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Consulting us </h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
       </div>
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="city">City</label>
-          <select id="city" name="city">
-            <option value="Amman">Amman</option>
-            <option value="Zaqraa">Zaqraa</option>
-          
-          </select>
-          <label for="subject">Your occasion </label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
+      <div class="row">
+        <div class="column">
+          <img src="./img/contact us.jpg " class='imgContact'>
+        </div>
+        <form id='fullform-ceremony'>
+          <div class="column" id='form-ceremony' style="font-family: arial;">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="Amman">Amman</option>
+              <option value="Zaqraa">Zaqraa</option>
+   
+            </select>
+            <label for="subject">Your occasion </label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input id='submit' type="submit" value="submit">
+       
         </form>
       </div>
     </div>
+    </div>
+    
+    <div id="overlay">
+      <div id="text"></div>
+   <button id="exitButton"></button>
   </div>
-
-
-
-
+   
+   
+   
+   
     <script src="./js/app.js"></script>
-</body>
-</html>
+  </body>
+   
+  </html>
