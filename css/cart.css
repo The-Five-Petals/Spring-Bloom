@@ -61,9 +61,7 @@ body{
       pointer-events: none;
     } 
    
-    /* #nav-container * {
-      visibility: visible;
-    } */
+   
     .button {
        position: relative;
       display: flex;
@@ -175,7 +173,12 @@ body{
   padding-top: 200px;
   
   }
-  
+  #checkoutHeader{
+  padding-bottom: 40px;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+  }
   .checkOutText{
   text-align: center;
     padding-bottom: 40px;

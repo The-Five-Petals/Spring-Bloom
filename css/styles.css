@@ -14,9 +14,9 @@ main{
 
 .slide-container{
 margin-left:700px ;
-position:relative;
-top: 80px;
-  
+ position:relative;
+top: 80px; 
+
 
 
 }
@@ -763,7 +763,12 @@ justify-content: center;
   font-family: 'Brygada 1918', serif;
   
 }
- 
+ #intro-aboutus span{
+   font-weight: bold;
+   font-size: larger;
+  
+
+ }
 #our-team-heading{
   font-family: 'Nunito', sans-serif;
 text-align: center;
@@ -1004,6 +1009,23 @@ margin: 0;
  
 }
 
+.ceremonydiv{
+  margin-bottom: -180px;
+  /* padding-top: 1000px; */
+}
+.ceremonydiv p{
+margin-top: 0;
+font-family: 'Nunito', sans-serif;
+padding: 100px;
+text-align: center;
+font-family: 'Brygada 1918', serif;
+font-size: 35px;
 
+}
+.ceremonydiv span{
+  font-weight: bold;
+   font-size: larger;
+   font-family: 'Brygada 1918', serif;
+}
 
 /* ----------------------- end ------------------*/

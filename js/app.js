@@ -100,6 +100,7 @@ function onLoadCartNumbers(){
   if (productNumbers) {
     document.querySelector('.cart span').textContent = productNumbers;
   }
+
 }
 
 
@@ -163,14 +164,14 @@ function displayCart() {
       productContainer.innerHTML = '';
       Object.values(cartItems).map( (item) => {
           productContainer.innerHTML += 
-          `<div class="product"><ion-icon name="close-circle"></ion-icon><img src="./img/${item.name}.jpg" />
+          `<div class="product"><ion-icon name="close-circle" style="color: #d488c1;"></ion-icon><img src="./img/${item.name}.jpg" />
               <span class="sm-hide">${item.name}</span>
           </div>
           <div class="price sm-hide">JD${item.price},00</div>
           <div class="quantity">
-              <ion-icon class="decrease " name="arrow-dropleft-circle"></ion-icon>
+              <ion-icon class="decrease" name="arrow-dropleft-circle" style="color: #d488c1;"></ion-icon>
                   <span>${item.inCart}</span>
-              <ion-icon class="increase" name="arrow-dropright-circle"></ion-icon>   
+              <ion-icon class="increase" name="arrow-dropright-circle" style="color: #d488c1;"></ion-icon>   
           </div>
           <div class="total">JD${item.inCart * item.price},00</div>`;
       });
@@ -259,6 +260,10 @@ function deleteButtons() {
       })
   }
 }
+
+function clearCart(){
+
+}
 displayCart();
 onLoadCartNumbers();
 
@@ -279,7 +284,14 @@ function  userMessege(){
 
   function popoutMsg(event) {
     overlay = document.getElementById('overlay').style.display = "none";
+   
+    
+    window.localStorage.clear();
+    location.reload();
+    return false ;
+
   }
+
 }
 let checkoutForm =document.getElementById ('CheckoutForm');
 checkoutForm.addEventListener('submit' ,popoutMsg);
