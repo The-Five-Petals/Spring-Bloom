@@ -2,20 +2,7 @@
 let carts=document.querySelectorAll('.add-cart');
 
 
-// function Product (name , price , incart){
-//   this.name = name ;
-//   this.price=price;
-//   this.incart=incart;
-//   Product.all.push(this);
-// }
-// Product.all=[];
 
-// new Product ('Flower Gori',10 ,0);
-// new Product ('Pink Gori',15 ,0);
-// new Product ('Heart Package',12 ,0);
-// new Product ('Message Package',13 ,0);
-// new Product ('Mix Package',18 ,0);
-// new Product ('Birthday Package',20 ,0);
 
 let products=[
   {

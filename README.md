@@ -13,7 +13,25 @@
 4. Bara'a Jahmani
 5. Yazan Baker
 
+
+
+
+
+
 ![](https://miro.medium.com/max/10846/1*c4PwAk-scwsmIsgonBgqYA.jpeg)
+
+
+
+![Our wireFrame](https://i.ibb.co/CM6tqbD/final-wireframe.png)
+
+
+
+
+Our Resources in whole project :
+
+-  .w3 School website
+
+- YouTube ( Telmo Sampaio , Mitchell Hudson , freeCodeCamp.org)
 
 
 
